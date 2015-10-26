@@ -1,0 +1,10 @@
+*.py[cod]
+__pycache__
+*.egg-info
+.cache/
+.coverage
+.tox/
+build/
+dist/
+output/
+boilerplate/
