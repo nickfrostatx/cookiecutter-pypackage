@@ -23,13 +23,14 @@ setup(
     long_description=readme + '\n\n' + history,
     packages=['{{ cookiecutter.project_slug }}'],
     install_requires=[],
-    tests_require=[
-        'pytest',
-        'pytest-httpbin',
-        'pytest-cov',
-        'pytest-pep8',
-        'pytest-pep257',
-    ],
+    extras_require={
+        'testing': [
+            'pytest',
+            'pytest-cov',
+            'pytest-pep8',
+            'pytest-pep257',
+        ],
+    },
     license='MIT',
     keywords='{{ cookiecutter.project_slug }}',
     classifiers=[
