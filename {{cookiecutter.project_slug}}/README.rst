@@ -20,7 +20,7 @@ Installation
 
 .. code-block:: bash
 
-    $ pip install nass
+    $ pip install {{ cookiecutter.project_slug }}
 
 Usage
 -----
