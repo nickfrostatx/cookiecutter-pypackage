@@ -19,7 +19,7 @@ install: pip install tox
 script: tox
 deploy:
   provider: pypi
-  user: nickfrostatx
+  user: {{ cookiecutter.pypi_username }}
   password: TODO
   distributions: sdist bdist_wheel
   on:
