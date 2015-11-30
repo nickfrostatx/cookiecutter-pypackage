@@ -15,5 +15,10 @@ matrix:
     env: TOXENV=pypy3
   - python: pypy
     env: TOXENV=pypy
-install: pip install tox
-script: tox
+install:
+- pip install tox
+- pip install cookiecutter
+script:
+- cookiecutter . --no-input
+- cd ./python_boilerplate
+- tox
